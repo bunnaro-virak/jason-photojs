@@ -1,0 +1,204 @@
+{
+    "users": {
+        "photos": {
+            "zoom": {
+                "width": "1200",
+                "height": "auto"
+            },
+            "preview": {
+                "width": "200",
+                "height": "200"
+            },
+            "thumbnail": {
+                "width": "100",
+                "height": "100"
+            },
+            "small": {
+                "width": "35",
+                "height": "35"
+            },
+            "directory": "resources/usrs/%s/photos/%s/"
+        },
+        "covers": {
+            "preview": {
+                "width": "1500",
+                "height": "500"
+            },
+            "thumbnail": {
+                "width": "420",
+                "height": "auto"
+            },
+            "directory": "resources/usrs/%s/covers/%s/"
+        }
+    },
+    "posts": {            
+        "photos":{
+            "zoom": {
+                "width": "1200",
+                "height": "auto"
+            },
+            "preview": {
+                "width": "600",
+                "height": "auto"
+            },
+            "thumbnail": {
+                "width": "420",
+                "height": "auto"
+            },
+            "small": {
+                "width": "200",
+                "height": "auto"
+            },
+            "original": {
+                "width": "auto",
+                "height": "auto"  
+            },
+            "directory": "resources/clouds/%s/photos/%s/"
+        },
+        "videos": {            
+            "preview": {
+                "width": "600",
+                "height": "auto"
+            },
+            "thumbnail": {
+                "width": "420",
+                "height": "auto"
+            },
+            "directory": "resources/clouds/%s/videos/%s/",
+            "sd_format": "hls360p",
+            "hd_format": "hls720p"
+        }
+    },
+    "items": {            
+        "photos":{
+            "zoom": {
+                "width": "1200",
+                "height": "auto"
+            },
+            "preview": {
+                "width": "600",
+                "height": "auto"
+            },
+            "thumbnail": {
+                "width": "420",
+                "height": "auto"
+            },
+            "small": {
+                "width": "200",
+                "height": "auto"
+            },
+            "original": {
+                "width": "auto",
+                "height": "auto"  
+            },
+            "directory": "resources/items/%s/photos/%s/"
+        },
+        "videos": {            
+            "preview": {
+                "width": "600",
+                "height": "auto"
+            },
+            "thumbnail": {
+                "width": "420",
+                "height": "auto"
+            },
+            "directory": "resources/items/%s/videos/%s/",
+            "sd_format": "hls360p",
+            "hd_format": "hls720p"
+        }
+    },
+    "orders": {
+        "photos": {            
+            "preview": {
+                "width": "1500",
+                "height": "auto"
+            },
+            "thumbnail": {
+                "width": "420",
+                "height": "auto"
+            },
+            "directory": "resources/orders/%s/photos/%s/"
+        }
+    },
+    "businesses": {
+        "photos": {
+            "zoom": {
+                "width": "1200",
+                "height": "auto"
+            },
+            "preview": {
+                "width": "200",
+                "height": "200"
+            },
+            "thumbnail": {
+                "width": "100",
+                "height": "100"
+            },
+            "small": {
+                "width": "35",
+                "height": "35"
+            },
+            "directory": "businesses/usrs/%s/photos/%s/"
+        },
+        "covers": {
+            "preview": {
+                "width": "1500",
+                "height": "500"
+            },
+            "zoom": {
+                "width": "1500",
+                "height": "500"
+            },
+            "thumbnail": {
+                "width": "420",
+                "height": "auto"
+            },
+            "directory": "businesses/usrs/%s/covers/%s/"
+        }
+    },
+    "comments": {
+        "photos": {
+            "zoom": {
+                "width": "1200",
+                "height": "auto"
+            },
+            "preview": {
+                "width": "420",
+                "height": "420"
+            },
+            "thumbnail": {
+                "width": "200",
+                "height": "200"
+            },
+            "small": {
+                "width": "100",
+                "height": "100"
+            },
+            "directory": "resources/comments/%s/photos/%s/"
+        },
+        "voices": {
+            "directory": "resources/comments/%s/voices/%s/"
+        }
+    },
+    "rewards": {
+        "photos": {
+            "zoom": {
+                "width": "1200",
+                "height": "auto"
+            },
+            "preview": {
+                "width": "420",
+                "height": "420"
+            },
+            "thumbnail": {
+                "width": "200",
+                "height": "200"
+            },
+            "small": {
+                "width": "100",
+                "height": "100"
+            },
+            "directory": "resources/rewards/%s/photos/%s/"
+        }
+    }
+}

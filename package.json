@@ -1,0 +1,15 @@
+{
+  "name": "jason-photojs",
+  "version": "1.0.1",
+  "description": "work on photo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jason",
+  "license": "ISC",
+  "dependencies": {
+    "gm": "^1.23.1"
+  }
+}
