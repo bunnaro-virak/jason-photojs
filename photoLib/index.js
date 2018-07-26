@@ -1,4 +1,5 @@
 'use strict';
+let fs = require('fs');
 let gm = require('gm');
 let printf = require('util').format;
 let helper = require('../utils/helper');
@@ -55,3 +56,47 @@ photoLib.getDirectory = function (refType, photoType, sizes, filename, reference
     });
     return result;
 };
+
+photoLib.fileDimensionSize = function (filePath) {
+    return new Promise(function (resolve, reject) {
+        try {
+            // tmp path 
+            let tmpPath = config.path.storage('tmp-image' + new Date().getTime() + Math.random() * 1000 + '.jpg');
+            gm(filePath)
+                .options({
+                    imageMagick: false
+                })
+                .autoOrient()
+                .write(tmpPath, function (err) {
+                    if (err) {
+                        // Logger.error('photoLib::resize::size\t\t' + err);
+                        return reject(err);
+                    }
+                    gm(tmpPath)
+                        .options({
+                            imageMagick: false
+                        })
+                        .autoOrient()
+                        .size(function (err, value) {
+                            if (err) {
+                                // Logger.error('photoLib::resize::size\t\t' + err);
+                                return reject(err);
+                            }
+                            resolve(value);
+                            fs.unlink(tmpPath, function () {});
+                        });
+                    gm(tmpPath)
+                        .options({
+                            imageMagick: false
+                        })
+                        .autoOrient()
+                        .identify(function (err, value) {
+                            console.log('Identify result:', err, value);
+                        });
+                });
+
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
